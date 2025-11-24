@@ -1,0 +1,134 @@
+```mermaid
+classDiagram
+    direction LR
+
+    %% ======================
+    %% CLASE BASE
+    %% ======================
+    class Personaje {
+        +string id
+        +string nombre
+        +string rol
+        +int nivel
+        +int vida
+        +int ataque
+        +int defensa
+
+        +Personaje()
+        +Personaje(string id, string nombre)
+        +virtual ~Personaje()
+
+        +void mostrarInfo()
+        +virtual void accion(Personaje* objetivo)
+        +string getId()
+        +string getNombre()
+    }
+
+    %% ======================
+    %% CLASES DERIVADAS
+    %% ======================
+    class Guerrero {
+        +Guerrero()
+        +Guerrero(string id, string nombre)
+        +void atacar()
+        +void accion(Personaje* objetivo)
+    }
+
+    class Mago {
+        +Mago()
+        +Mago(string id, string nombre)
+        +void lanzarHechizo()
+        +void accion(Personaje* objetivo)
+    }
+
+    class Sanador {
+        +Sanador()
+        +Sanador(string id, string nombre)
+        +void curarAliado()
+        +void accion(Personaje* objetivo)
+    }
+
+    %% ======================
+    %% OPONENTE
+    %% ======================
+    class Oponente {
+        +string nombre
+        +int vida
+        +int ataque
+
+        +Oponente()
+        +Oponente(string nombre, int vida, int ataque)
+
+        +void mostrarInfo()
+        +void recibirDanio(int)
+    }
+
+    %% ======================
+    %% ARENA
+    %% ======================
+    class Arena {
+        -bool terminado
+        -string ganador
+
+        +Arena()
+        +void iniciarCombate(Personaje* h, Oponente* o)
+        +void turnoHeroe(Personaje* h, Oponente* o)
+        +void turnoOponente(Personaje* h, Oponente* o)
+    }
+
+    %% ======================
+    %% OBJETO MÁGICO
+    %% ======================
+    class ObjetoMagico {
+        +string nombre
+        +int stock
+        +int minEfecto
+        +int maxEfecto
+
+        +ObjetoMagico()
+        +ObjetoMagico(string, int, int, int)
+        +void mostrarInfo()
+    }
+
+    %% ======================
+    %% INVENTARIO
+    %% ======================
+    class Inventario {
+        -unordered_map<string, ObjetoMagico> objetos
+
+        +Inventario()
+        +void crearObjeto()
+        +void listarObjetos()
+        +void actualizarStock()
+        +ObjetoMagico* obtenerObjeto(string)
+    }
+
+    %% ======================
+    %% GUILD
+    %% ======================
+    class Guild {
+        -unordered_map<string, Personaje*> heroes
+
+        +Guild()
+        +~Guild()
+
+        +void inicializarBase()
+        +void agregarHeroe(Personaje*)
+        +void listarHeroes() const
+        +void retirarHeroe(string)
+        +Personaje* buscarHeroe(string)
+    }
+
+    %% ======================
+    %% RELACIONES
+    %% ======================
+
+    Personaje <|-- Guerrero
+    Personaje <|-- Mago
+    Personaje <|-- Sanador
+
+    Guild o-- Personaje : posee >
+    Inventario o-- ObjetoMagico : contiene >
+    Arena o-- Personaje : combate con >
+    Arena o-- Oponente : combate con > 
+```
