@@ -1,5 +1,4 @@
 ```mermaid
-
 classDiagram
     direction LR
 
@@ -131,6 +130,5 @@ classDiagram
     Guild o-- Personaje : posee >
     Inventario o-- ObjetoMagico : contiene >
     Arena o-- Personaje : combate con >
-    Arena o-- Oponente : combate con >
-
+    Arena o-- Oponente : combate con > 
 ```
