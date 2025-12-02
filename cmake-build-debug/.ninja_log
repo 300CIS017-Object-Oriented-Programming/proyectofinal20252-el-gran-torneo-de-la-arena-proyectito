@@ -1,0 +1,21 @@
+# ninja log v6
+51	730	7864155197123432	CMakeFiles/Proyecto_POO.dir/main.cpp.obj	ba99af3e2ce698c1
+21	432	7863907466991828	build.ninja	cb9f008e9e025e8f
+31	628	7864118683035022	CMakeFiles/Proyecto_POO.dir/Personaje.cpp.obj	773586d7b5a92c82
+62	835	7864122093667907	CMakeFiles/Proyecto_POO.dir/Inventario.cpp.obj	289e1f22bdff8f8f
+41	684	7863896280577521	CMakeFiles/Proyecto_POO.dir/Oponente.cpp.obj	b28edd8c060c2057
+99	956	7864099256599518	CMakeFiles/Proyecto_POO.dir/Sanador.cpp.obj	476ddb22728eeeb7
+85	992	7864099256459523	CMakeFiles/Proyecto_POO.dir/Mago.cpp.obj	706879e413e57fb1
+75	955	7864099256359503	CMakeFiles/Proyecto_POO.dir/Guerrero.cpp.obj	f6eb1321b6b8e4e9
+56	875	7864149683447451	CMakeFiles/Proyecto_POO.dir/Guild.cpp.obj	b860b87338be3a51
+65	709	7864149683537291	CMakeFiles/Proyecto_POO.dir/Arena.cpp.obj	127c33b9d3b08f75
+73	611	7864149683618279	CMakeFiles/Proyecto_POO.dir/ObjetoMagico.cpp.obj	5992e46d914e6899
+732	1073	7864155203942096	Proyecto_POO.exe	973c846d7a8a1b68
+20	693	7864155598698192	CMakeFiles/Proyecto_POO.dir/main.cpp.obj	ba99af3e2ce698c1
+694	927	7864155605434075	Proyecto_POO.exe	973c846d7a8a1b68
+62	730	7864157314558498	CMakeFiles/Proyecto_POO.dir/main.cpp.obj	ba99af3e2ce698c1
+732	1099	7864157321253534	Proyecto_POO.exe	973c846d7a8a1b68
+51	851	7864161923428270	CMakeFiles/Proyecto_POO.dir/main.cpp.obj	ba99af3e2ce698c1
+852	1186	7864161931430929	Proyecto_POO.exe	973c846d7a8a1b68
+54	762	7864168003996698	CMakeFiles/Proyecto_POO.dir/Inventario.cpp.obj	289e1f22bdff8f8f
+763	1113	7864168011091278	Proyecto_POO.exe	973c846d7a8a1b68

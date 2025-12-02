@@ -1,0 +1,3 @@
+C:/Users/anto2/OneDrive/Desktop/programacion/Proyecto_POO/cmake-build-debug/CMakeFiles/Proyecto_POO.dir
+C:/Users/anto2/OneDrive/Desktop/programacion/Proyecto_POO/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/anto2/OneDrive/Desktop/programacion/Proyecto_POO/cmake-build-debug/CMakeFiles/rebuild_cache.dir
